@@ -83,7 +83,6 @@ User Input
 │
 ▼
 UI + Risk Display
-
 ---
 
 ## 🛠️ Technology Stack
