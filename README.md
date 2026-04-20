@@ -61,16 +61,21 @@ SheShield AI is a **real-time conversational safety assistant** that:
 
 ## 🏗️ Architecture
 
-The system follows a **lightweight agentic pipeline**:
+```
 User Input
-↓
+   |
+   v
 Risk Detection
-↓
+   |
+   v
 Context Processing (Chat History)
-↓
+   |
+   v
 AI Response (Groq LLM)
-↓
+   |
+   v
 UI + Risk Display
+```
 
 ## 🛠️ Technology Stack
 
