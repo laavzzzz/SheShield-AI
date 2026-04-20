@@ -59,30 +59,15 @@ SheShield AI is a **real-time conversational safety assistant** that:
 | 💬 Multi-Chat Memory | Separate chat sessions like ChatGPT |
 | 🎨 Modern UI | Lovable-inspired clean interface |
 
----
-
 ## 🏗️ Architecture
 
 The system follows a **lightweight agentic pipeline**:
-User Input
-│
-▼
-┌────────────┐
-│ Risk Check │
-└────────────┘
-│
-▼
-┌────────────┐
-│ Context AI │ ← chat history
-└────────────┘
-│
-▼
-┌────────────┐
-│ Response │ ← Groq LLM
-└────────────┘
-│
-▼
-UI + Risk Display
+```mermaid
+flowchart TD
+    A[User Input] --> B[Risk Detection]
+    B --> C[Context Processing]
+    C --> D[AI Response - Groq LLM]
+    D --> E[UI + Risk Display]
 ---
 
 ## 🛠️ Technology Stack
@@ -95,8 +80,6 @@ UI + Risk Display
 | Backend | Python |
 | Location | IP-based API (ipinfo.io) |
 | Styling | Custom CSS |
-
----
 
 ## 🚀 Quick Start
 
