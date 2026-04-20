@@ -62,13 +62,15 @@ SheShield AI is a **real-time conversational safety assistant** that:
 ## 🏗️ Architecture
 
 The system follows a **lightweight agentic pipeline**:
-```mermaid
-flowchart TD
-    A[User Input] --> B[Risk Detection]
-    B --> C[Context Processing]
-    C --> D[AI Response - Groq LLM]
-    D --> E[UI + Risk Display]
----
+User Input
+↓
+Risk Detection
+↓
+Context Processing (Chat History)
+↓
+AI Response (Groq LLM)
+↓
+UI + Risk Display
 
 ## 🛠️ Technology Stack
 
