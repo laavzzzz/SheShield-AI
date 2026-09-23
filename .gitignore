@@ -1,3 +1,11 @@
+
+# Exclude Streamlit local secrets
+.streamlit/secrets.toml
+
+# Exclude virtual environment
 venv/
 .env
+
+# Exclude Python cache
 __pycache__/
+*.pyc
